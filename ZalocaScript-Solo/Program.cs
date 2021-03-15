@@ -11,7 +11,7 @@ namespace ZalocaScript_Solo
         /// <summary>
         /// The token.
         /// </summary>
-        private const string token1 = "Nzk4MTU5MjYwMzUzNjkxNjg4.YE6vmw.aqMv28JK6RVk5d41-m1ITyO3DLA";
+        private const string token1 = "";
 
         /// <summary>
         /// The Discord instance.
