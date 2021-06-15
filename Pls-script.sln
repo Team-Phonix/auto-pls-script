@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZalocaScript-Solo", "ZalocaScript-Solo\ZalocaScript-Solo.csproj", "{B15AD803-D9A2-4709-8753-1EDC71510AEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pls-script", "ZalocaScript-Solo\Pls-script.csproj", "{B15AD803-D9A2-4709-8753-1EDC71510AEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

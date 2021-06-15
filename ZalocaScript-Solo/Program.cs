@@ -11,7 +11,7 @@ namespace ZalocaScript_Solo
         /// <summary>
         /// The token.
         /// </summary>
-        private const string token1 = "";
+        private const string token1 = "mfa.nLzee-2Kh6YediPfXH1PV7KT06Ql1zZpgw6OX7Y9NpraytTLpuItKVHY1BIdhL_Z6LVtTY2T5QTmkfNXVVPM";
 
         /// <summary>
         /// The Discord instance.
@@ -47,13 +47,15 @@ namespace ZalocaScript_Solo
 
         private static void start_sending() => new Thread(async () =>
         {
-            const string beg = "pls beg", dep = "pls dep all";
+            const string beg = "pls beg", dep = "pls dep all", hunt = "pls hunt", fish = "pls fish";
             const ushort wait = 45000;
-            const ulong guild = 820820716743819314, channel = 820824152335319090;
+            const ulong guild = 781908450854174731, channel = 825806449598267452;
             while (true)
             {
                 await client.GetGuild(guild).GetTextChannel(channel).SendMessageAsync(beg);
                 await client.GetGuild(guild).GetTextChannel(channel).SendMessageAsync(dep);
+                await client.GetGuild(guild).GetTextChannel(channel).SendMessageAsync(hunt);
+                await client.GetGuild(guild).GetTextChannel(channel).SendMessageAsync(fish);
                 await Task.Delay(wait);
             }
         }).Start();
