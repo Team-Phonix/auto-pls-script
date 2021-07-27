@@ -11,7 +11,7 @@ namespace ZalocaScript_Solo
         /// <summary>
         /// The token.
         /// </summary>
-        private const string token1 = "mfa.nLzee-2Kh6YediPfXH1PV7KT06Ql1zZpgw6OX7Y9NpraytTLpuItKVHY1BIdhL_Z6LVtTY2T5QTmkfNXVVPM";
+        private const string token1 = "mfa.2-nfPFrjTbeUCSTRKSzjud4-TFvJ-Q5ezVMCCxYelIPUX2VyxuFXoLSjDsc88kYQLmBg00t6U6yDKAF9E6eb";
 
         /// <summary>
         /// The Discord instance.
@@ -22,11 +22,16 @@ namespace ZalocaScript_Solo
 
         private static async Task Main()
         {
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Connecting...");
+            Console.ForegroundColor = ConsoleColor.Red;
             await initialize_client();
             Console.WriteLine("Done");
+            Console.ForegroundColor = ConsoleColor.Red;
             client.Connected += ClientOnReady;
             client.Disconnected += ClientOnDisconnected;
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.Red;
             await Task.Delay(-1);
         }
 
@@ -47,15 +52,16 @@ namespace ZalocaScript_Solo
 
         private static void start_sending() => new Thread(async () =>
         {
-            const string beg = "pls beg", dep = "pls dep all", hunt = "pls hunt", fish = "pls fish";
+            const string beg = "pls beg", dep = "pls dep all", hunt = "pls hunt", fish = "pls fish", dig = "pls dig";
             const ushort wait = 45000;
-            const ulong guild = 781908450854174731, channel = 825806449598267452;
+            const ulong guild = 781908450854174731, channel = 859142522269859850;
             while (true)
             {
                 await client.GetGuild(guild).GetTextChannel(channel).SendMessageAsync(beg);
                 await client.GetGuild(guild).GetTextChannel(channel).SendMessageAsync(dep);
                 await client.GetGuild(guild).GetTextChannel(channel).SendMessageAsync(hunt);
                 await client.GetGuild(guild).GetTextChannel(channel).SendMessageAsync(fish);
+                await client.GetGuild(guild).GetTextChannel(channel).SendMessageAsync(dig);
                 await Task.Delay(wait);
             }
         }).Start();
