@@ -11,7 +11,7 @@ namespace ZalocaScript_Solo
         /// <summary>
         /// The token.
         /// </summary>
-        private const string token1 = "mfa.2-nfPFrjTbeUCSTRKSzjud4-TFvJ-Q5ezVMCCxYelIPUX2VyxuFXoLSjDsc88kYQLmBg00t6U6yDKAF9E6eb";
+        private const string token1 = "Insert your token";
 
         /// <summary>
         /// The Discord instance.
